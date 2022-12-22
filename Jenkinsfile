@@ -26,7 +26,7 @@ pipeline{
                 agent{label "python_tst1"}
                 steps{
                     dir("server"){
-                        sh "python ./server.py"
+                        sh "python./server.py"
                     }
                 }
             }

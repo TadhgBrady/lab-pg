@@ -25,8 +25,7 @@ pipeline{
             stage("run python"){
                 agent{label "python_tst1"}
                 steps{
-                    dir("server"){
-                        sh "Python ./server.py"
+                        sh "cp -r * /usr/share/jenkins/workspace/Python/server"
                     }
                 }
             }
